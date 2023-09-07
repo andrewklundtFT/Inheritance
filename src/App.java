@@ -17,5 +17,10 @@ public class App {
         for (Student k : studentList) {
             System.out.println(k);
         }
+        System.out.println("\n\ngetSerialData()");
+
+        for (Student k : studentList) {
+            System.out.println(k.getSerialData());
+        }
      }
 }

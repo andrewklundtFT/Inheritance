@@ -1,5 +1,5 @@
-public class Student {
-
+public class Student implements Serializable 
+{
     private String firstName;
     private String lastName;
     private double GPA;
@@ -45,4 +45,7 @@ public class Student {
         return getLastName() + ", " + getFirstName() + "; GPA: " + getGPA() + "; ID: " + getID(); 
     }
 
+    public String getSerialData() {
+        return firstName + "," + lastName + "," + GPA;
+    }
 }
