@@ -1,4 +1,4 @@
-public class Student implements Serializable 
+public abstract class Student implements Serializable 
 {
     private String firstName;
     private String lastName;
@@ -48,4 +48,6 @@ public class Student implements Serializable
     public String getSerialData() {
         return firstName + "," + lastName + "," + GPA;
     }
+
+    public abstract String getDegree();
 }

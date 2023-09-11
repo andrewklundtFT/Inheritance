@@ -27,5 +27,7 @@ public class GradStudent extends Student {
         return getLastName() + ", " + getFirstName() + "; GPA: " + getGPA() + "; ID: " + getID() + "; Office: " + getOffice() + "; Office Hours: " + getOfficeHours();
     }
 
-
+    public String getDegree() {
+        return "graduate degree";
+    }
 }
